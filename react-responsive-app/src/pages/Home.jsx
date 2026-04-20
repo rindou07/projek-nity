@@ -10,14 +10,14 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 text-left">
             <span className="inline-block py-1 px-4 rounded-full bg-brand-light text-brand-primary border border-brand-primary/20 text-sm font-semibold tracking-wide mb-6">
-              Pusat Oleh-Oleh Khas Banyumas
+              Pusat Oleh-Oleh Khas Purwokerto
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Cita Rasa Autentik <br/>
               dari <span className="text-brand-primary">Niti 2</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Menyediakan berbagai macam oleh-oleh khas nusantara pilihan. Temukan keripik tempe best seller hingga legitnya gethuk goreng Sokaraja di satu tempat.
+              Menyediakan berbagai macam oleh-oleh khas Purwokerto pilihan. Temukan keripik tempe best seller, nopia narwan, mancho, widaran, toso, kacang asin dll di satu tempat.
             </p>
             <Link 
               to="/catalog"
@@ -41,9 +41,9 @@ const Home = () => {
       {/* Tentang Kami Section */}
       <section id="tentang" className="py-16 bg-brand-light">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Cerita Kami</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Tentang Kami</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Niti 2 hadir untuk mengkurasi dan menyajikan ragam jajanan tradisional kualitas unggul. 
+            Niti 2 hadir untuk menyajikan ragam jajanan tradisional kualitas unggul. 
             Tanpa perlu ragu soal rasa, seluruh produk yang kami sediakan adalah "Buah Tangan" 
             pilihan khas Purwokerto yang diproduksi dengan bahan terbaik untuk Anda dan keluarga.
           </p>
@@ -68,7 +68,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Lokasi Toko</h3>
-                  <p className="text-gray-600">Jl. Jenderal Sudirman No. 123, Purwokerto Timur,<br/>Kabupaten Banyumas, Jawa Tengah</p>
+                  <p className="text-gray-600">Jl. DR. Soeparno No.samping, Purwokerto Timur,<br/>Kabupaten Banyumas, Jawa Tengah</p>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@ const Home = () => {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Jam Operasional</h3>
                   <ul className="text-gray-600 space-y-1">
-                    <li className="flex justify-between w-48"><span className="font-medium">Senin - Jumat:</span> <span>08:00 - 21:00</span></li>
-                    <li className="flex justify-between w-48"><span className="font-medium">Sabtu - Minggu:</span> <span>07:00 - 22:00</span></li>
+                    <li className="flex justify-between w-48"><span className="font-medium">Senin - Jumat:</span> <span>09:00 - 20:00</span></li>
+                    <li className="flex justify-between w-48"><span className="font-medium">Sabtu - Minggu:</span> <span>09:00 - 20:00</span></li>
                   </ul>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const Home = () => {
             <div className="h-[400px] rounded-2xl overflow-hidden shadow-lg border-4 border-white">
               {/* Google Maps iframe placeholder for Niti 2 Purwokerto */}
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126487.89324505303!2d109.18342469999999!3d-7.4208226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6aa001550c6ea3%3A0x633390977d4c8af8!2sPurwokerto%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                src="https://maps.app.goo.gl/AMXRi8ZD4yC9rw149" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
