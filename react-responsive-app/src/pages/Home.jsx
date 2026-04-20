@@ -80,9 +80,9 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Jam Operasional</h3>
-                  <ul className="text-gray-600 space-y-1">
-                    <li className="flex justify-between w-48"><span className="font-medium">Senin - Jumat:</span> <span>09:00 - 20:00</span></li>
-                    <li className="flex justify-between w-48"><span className="font-medium">Sabtu - Minggu:</span> <span>09:00 - 20:00</span></li>
+                  <ul className="text-gray-600 space-y-2">
+                    <li className="flex gap-4"><span className="font-medium w-36">Senin - Jumat:</span> <span>09:00 - 20:00</span></li>
+                    <li className="flex gap-4"><span className="font-medium w-36">Sabtu - Minggu:</span> <span>09:00 - 20:00</span></li>
                   </ul>
                 </div>
               </div>
@@ -113,7 +113,9 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <a 
-              href="#" 
+              href="https://gofood.link/a/Kg61Atj" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="flex items-center gap-3 bg-red-600 text-white px-8 py-4 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"
             >
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/GoFood_logo.svg/1050px-GoFood_logo.svg.png" alt="GoFood" className="h-8 object-contain bg-white px-2 py-1 rounded" />
