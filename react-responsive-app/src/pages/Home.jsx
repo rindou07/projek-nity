@@ -45,7 +45,7 @@ const Home = () => {
           <p className="text-lg text-gray-700 leading-relaxed">
             Niti 2 hadir untuk menyajikan ragam jajanan tradisional kualitas unggul. 
             Tanpa perlu ragu soal rasa, seluruh produk yang kami sediakan adalah "Buah Tangan" 
-            pilihan khas Purwokerto yang diproduksi dengan bahan terbaik untuk Anda dan keluarga. Terkenal sejak Tahun 1967
+            pilihan khas Purwokerto yang diproduksi dengan bahan terbaik untuk Anda dan keluarga. Terkenal sejak Tahun 1967.
           </p>
         </div>
       </section>
