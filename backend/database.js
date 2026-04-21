@@ -34,12 +34,17 @@ const db = new sqlite3.Database(dbPath, (err) => {
             console.log('Seeding initial products data...');
             const stmt = db.prepare('INSERT INTO products (name, description, price, category, isBestseller, imageUrl) VALUES (?, ?, ?, ?, ?, ?)');
             
-            stmt.run('Keripik Tempe Niti 2', 'Keripik tempe gurih dan renyah, best seller dari Niti 2.', 15000, 'Makanan', 1, 'https://picsum.photos/seed/tempe/400/300');
-            stmt.run('Gethuk Goreng Sokaraja', 'Gethuk goreng manis legit khas Purwokerto.', 20000, 'Makanan', 0, 'https://picsum.photos/seed/gethuk/400/300');
-            stmt.run('Mendoan Crispy', 'Tepung mendoan siap goreng yang praktis.', 12000, 'Makanan', 1, 'https://picsum.photos/seed/mendoan/400/300');
-            stmt.run('Sirup Kopi Murni', 'Sirup rasa kopi autentik yang menyegarkan.', 35000, 'Minuman', 0, 'https://picsum.photos/seed/kopi/400/300');
-            stmt.run('Kaos Purwokerto', 'Kaos cendera mata khas Purwokerto yang nyaman.', 55000, 'Souvenir', 0, 'https://picsum.photos/seed/kaos/400/300');
-            stmt.run('Gantungan Kunci Niti', 'Gantungan kunci kayu ukir manual.', 5000, 'Souvenir', 0, 'https://picsum.photos/seed/gantungan/400/300');
+            stmt.run('Tempe Kripik Niti 2', 'tempe kripik yang gurih, renyah dan bergizi, best seller dari niti 2', 30000, 'Makanan Kering', 1, 'https://picsum.photos/seed/tempekripik/400/300');
+            stmt.run('Nopia', 'rasa gula jawa, coklat', 18000, 'Makanan Kering', 0, 'https://picsum.photos/seed/nopia/400/300');
+            stmt.run('Mino', 'rasa coklat, gula jawa', 18000, 'Makanan Kering', 0, 'https://picsum.photos/seed/mino/400/300');
+            stmt.run('Kripik Dage', 'kripik dage dengan rasa gurih manis', 22000, 'Makanan Kering', 0, 'https://picsum.photos/seed/kripikdage/400/300');
+            stmt.run('Sale Goreng', 'manis empuk tidak alot', 24000, 'Makanan Semi-Basah', 0, 'https://picsum.photos/seed/salegoreng/400/300');
+            stmt.run('Sale Oven', '', 23000, 'Makanan Semi-Basah', 0, 'https://picsum.photos/seed/saleoven/400/300');
+            stmt.run('Teng-Teng', 'teng2 kacang dan teng2 jahe', 25000, 'Makanan Kering', 0, 'https://picsum.photos/seed/tengteng/400/300');
+            stmt.run('Klanting', 'rasa bawang', 15000, 'Makanan Kering', 0, 'https://picsum.photos/seed/klanting/400/300');
+            stmt.run('Sagon Ketan', 'enak dan renyah', 25000, 'Makanan Kering', 0, 'https://picsum.photos/seed/sagon/400/300');
+            stmt.run('Paket Kripik Isi 4', 'isi 4 bungkus kripik', 120000, 'Makanan Kering', 0, 'https://picsum.photos/seed/paket4/400/300');
+            stmt.run('Paket Kripik Isi 5', 'isi 5 bungkus kripik free besek', 150000, 'Makanan Kering', 0, 'https://picsum.photos/seed/paket5/400/300');
             
             stmt.finalize();
           }
