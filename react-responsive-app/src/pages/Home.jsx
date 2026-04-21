@@ -1,8 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { MapPin, Clock, ArrowRight } from 'lucide-react';
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const elem = document.getElementById(location.hash.slice(1));
+        if (elem) elem.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+  }, [location]);
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -39,7 +52,7 @@ const Home = () => {
       </section>
 
       {/* Tentang Kami Section */}
-      <section id="tentang" className="py-16 bg-brand-light">
+      <section id="tentang" className="py-16 bg-brand-light scroll-mt-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Tentang Kami</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -118,7 +131,7 @@ const Home = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-red-600 text-white px-8 py-4 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/GoFood_logo.svg/1050px-GoFood_logo.svg.png" alt="GoFood" className="h-8 object-contain bg-white px-2 py-1 rounded" />
+              <img src="/gofood.svg" alt="GoFood" className="h-8 object-contain bg-white px-2 py-1 rounded" />
               <span className="font-bold text-lg text-left leading-tight">Pesan di<br/>GoFood</span>
             </a>
           </div>

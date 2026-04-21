@@ -6,11 +6,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path, hash = '') => {
+    if (hash) {
+      return location.pathname === path && location.hash === hash;
+    }
+    return location.pathname === path && !location.hash;
+  };
 
-  const linkClass = (path) =>
+  const linkClass = (path, hash = '') =>
     `font-medium transition-colors hover:text-brand-primary ${
-      isActive(path) ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-600'
+      isActive(path, hash) ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-600'
     }`;
 
   return (
@@ -27,7 +32,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <Link to="/" className={linkClass('/')}>Beranda</Link>
-            <a href="/#tentang" className="font-medium transition-colors text-gray-600 hover:text-brand-primary">Tentang Niti 2</a>
+            <a href="/#tentang" className={linkClass('/', '#tentang')}>Tentang Niti 2</a>
             <Link to="/catalog" className={linkClass('/catalog')}>Katalog Produk</Link>
           </div>
 
