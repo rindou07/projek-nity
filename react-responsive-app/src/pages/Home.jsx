@@ -43,8 +43,8 @@ const Home = () => {
           
           <div className="order-1 md:order-2 h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="/niti2_hero.png" 
-              alt="Oleh Oleh Niti 2" 
+              src="/toko-niti2.jpg" 
+              alt="Toko Oleh Oleh Niti 2" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
