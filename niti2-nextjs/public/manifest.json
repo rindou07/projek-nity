@@ -1,0 +1,17 @@
+{
+  "name": "Pusat Oleh-Oleh Niti 2",
+  "short_name": "Niti 2",
+  "description": "Katalog Oleh-Oleh Khas Purwokerto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#b45309",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
